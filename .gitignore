@@ -58,3 +58,6 @@ buck-out/
 
 # CocoaPods
 Pods/
+
+# TypeScript
+dist/

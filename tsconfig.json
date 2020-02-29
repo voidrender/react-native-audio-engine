@@ -4,7 +4,6 @@
         "module": "commonjs",
         "lib": ["es6"],
         "allowJs": true,
-        "checkJs": true,
         "jsx": "react-native",
         "declaration": true,
         "sourceMap": true,
@@ -28,9 +27,12 @@
         "esModuleInterop": true
     },
     "exclude": [
-        "node_modules",
         "babel.config.js",
+        "dist",
+        "example",
+        "jest.config.js",
         "metro.config.js",
-        "jest.config.js"
+        "node_modules",
+        "prettier.config.js"
     ]
 }

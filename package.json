@@ -6,5 +6,12 @@
   "repository": "git@github.com:ioveracker/react-native-audio-engine.git",
   "author": "Isaac Overacker <isaac@overacker.me>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  }
 }
