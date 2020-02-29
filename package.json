@@ -1,0 +1,10 @@
+{
+  "name": "react-native-audio-engine",
+  "version": "0.0.1",
+  "description": "A React Native library for multitrack audio playback.",
+  "main": "dist/index.js",
+  "repository": "git@github.com:ioveracker/react-native-audio-engine.git",
+  "author": "Isaac Overacker <isaac@overacker.me>",
+  "license": "MIT",
+  "private": false
+}
