@@ -1,5 +1,11 @@
 import { NativeModules } from 'react-native';
 
-const { AudioEngine } = NativeModules;
+type AudioEngine = {
+    sampleMethod: (
+        stringArgument: string,
+        numberParameter: number,
+        callback: (callback: string) => void,
+    ) => void;
+};
 
-export default AudioEngine;
+export const AudioEngine: AudioEngine = NativeModules.AudioEngine;
