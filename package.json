@@ -15,8 +15,7 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf dist",
-    "prettier:project": "prettier --write '**/*.{js,ts,tsx}'"
+    "clean": "rm -rf dist"
   },
   "peerDependencies": {
     "react": "^16.8.1",
