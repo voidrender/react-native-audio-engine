@@ -5,6 +5,7 @@
   "scripts": {
     "postinstall": "node ../scripts/examples_postinstall.js && cd ios && pod install",
     "clean": "rm -rf node_modules ios/Pods",
+    "reintegrate": "yarn clean && yarn && yarn ios",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
