@@ -4,6 +4,11 @@
   "description": "A React Native library for multitrack audio playback.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "android",
+    "ios",
+    "react-native-audio-engine.podspec"
+  ],
   "repository": "git@github.com:ioveracker/react-native-audio-engine.git",
   "author": "Isaac Overacker <isaac@overacker.me>",
   "license": "MIT",
