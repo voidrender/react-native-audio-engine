@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "node ../scripts/examples_postinstall.js && cd ios && pod install",
+    "clean": "rm -rf node_modules ios/Pods",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint .",
-    "postinstall": "node ../scripts/examples_postinstall.js && cd ios && pod install"
+    "lint": "eslint ."
   },
   "dependencies": {
     "react": "16.9.0",

@@ -48,3 +48,11 @@ or Android:
 ```
 yarn android
 ```
+
+### Update Example With NativeModule Changes
+
+After making changes to the NativeModule, be sure to clean the example and reinstall dependencies:
+
+```
+cd example && yarn clean && yarn && yarn ios
+```
