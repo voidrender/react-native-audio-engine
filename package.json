@@ -11,7 +11,14 @@
     "build": "tsc",
     "clean": "rm -rf dist"
   },
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
   "devDependencies": {
+    "@types/react-native": "0.61.17",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5",
     "typescript": "3.8.3"
   }
 }

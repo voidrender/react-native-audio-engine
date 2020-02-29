@@ -33,6 +33,7 @@
         "jest.config.js",
         "metro.config.js",
         "node_modules",
-        "prettier.config.js"
+        "prettier.config.js",
+        "scripts"
     ]
 }
