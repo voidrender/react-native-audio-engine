@@ -1,33 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import AudioEngine from 'react-native-audio-engine';
+import { AudioEngine } from 'react-native-audio-engine';
 
-export default class App extends Component {
-    state = {
-        status: 'starting',
-        message: '--',
-    };
-    componentDidMount() {
-        AudioEngine.sampleMethod('Testing', 123, message => {
-            this.setState({
-                status: 'native callback received',
-                message,
-            });
-        });
-    }
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>☆AudioEngine example☆</Text>
-                <Text style={styles.instructions}>
-                    STATUS: {this.state.status}
-                </Text>
-                <Text style={styles.welcome}>☆NATIVE CALLBACK MESSAGE☆</Text>
-                <Text style={styles.instructions}>{this.state.message}</Text>
-            </View>
-        );
-    }
-}
+export const App = () => {
+    const [message, setMessage] = useState();
+
+    AudioEngine.sampleMethod('howdy!', 123, message => {
+        setMessage(message);
+    });
+
+    return (
+        <View style={styles.container}>
+            <Text>{message || 'Waiting for NativeModule...'}</Text>
+        </View>
+    );
+};
 
 const styles = StyleSheet.create({
     container: {
