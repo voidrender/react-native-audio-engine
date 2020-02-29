@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "description": "A React Native library for multitrack audio playback.",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "react-native": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "android",
+    "dist",
     "ios",
     "react-native-audio-engine.podspec"
   ],
@@ -15,7 +18,9 @@
   "private": false,
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "preversion": "yarn build",
+    "postversion": "git push --tags"
   },
   "peerDependencies": {
     "react": "^16.8.1",
