@@ -20,7 +20,7 @@
     "build": "tsc",
     "clean": "rm -rf dist",
     "preversion": "yarn build",
-    "postversion": "git push --tags"
+    "postversion": "git push --tags && yarn publish"
   },
   "peerDependencies": {
     "react": "^16.8.1",
