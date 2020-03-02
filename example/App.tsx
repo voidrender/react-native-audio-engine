@@ -21,7 +21,7 @@ export const App = () => {
                 renderItem={itemInfo => (
                     <TrackListItem
                         uri={itemInfo.item.uri}
-                        onSubmitEditing={text => {
+                        onEndEditing={text => {
                             tracks[itemInfo.index].uri = text;
                         }}
                         onDelete={() => {

@@ -3,17 +3,17 @@ import { Button, StyleSheet, TextInput, View } from 'react-native';
 
 interface Props {
     uri: string;
-    onSubmitEditing: (text: string) => void;
+    onEndEditing: (text: string) => void;
     onDelete: () => void;
 }
 
-export const TrackListItem = ({ uri, onSubmitEditing, onDelete }: Props) => {
+export const TrackListItem = ({ uri, onEndEditing, onDelete }: Props) => {
     return (
         <View style={styles.container}>
             <TextInput
                 style={styles.input}
                 defaultValue={uri}
-                onSubmitEditing={e => onSubmitEditing(e.nativeEvent.text)}
+                onEndEditing={e => onEndEditing(e.nativeEvent.text)}
                 autoCapitalize='none'
             />
             <Button title='Delete' onPress={onDelete} />
