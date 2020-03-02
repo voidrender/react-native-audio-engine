@@ -12,6 +12,8 @@ export const App = () => {
         { uri: 'track 2' },
     ]);
 
+    const [isPlaying, setIsPlaying] = useState(false);
+
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <FlatList
@@ -37,6 +39,13 @@ export const App = () => {
                     onPress={() => {
                         tracks.push({ uri: '' });
                         setTracks([...tracks]);
+                    }}
+                />
+                <Button
+                    title={isPlaying ? 'Pause' : 'Play'}
+                    onPress={() => {
+                        // TODO: Play/pause
+                        setIsPlaying(prevIsPlaying => !prevIsPlaying);
                     }}
                 />
             </View>
