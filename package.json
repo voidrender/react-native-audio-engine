@@ -18,6 +18,7 @@
   "private": false,
   "scripts": {
     "build": "tsc",
+    "test": "echo TODO",
     "clean": "rm -rf dist",
     "preversion": "yarn build",
     "postversion": "git push --tags && yarn publish"
